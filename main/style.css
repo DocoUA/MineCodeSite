@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track{
+	background: transparent;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: #56545A;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-corner{
+	background: transparent;
+}
+body{
+
+}
+h1{
+	color: red;
+	font-size: 40px;
+	font-family: "Lobster", cursive;
+	margin-bottom: 1px;
+}
