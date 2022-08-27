@@ -16,11 +16,26 @@
 	background: transparent;
 }
 body{
-
+	margin: 70px 100px 35px 100px;
+	background-color: #18171C;
+	color: white;
 }
-h1{
-	color: red;
-	font-size: 40px;
-	font-family: "Lobster", cursive;
-	margin-bottom: 1px;
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+hr{
+	border: 2px solid #414147;
+}
+@media screen and (min-width: 800px) {
+  .column{
+    flex: 1
+  }
 }
