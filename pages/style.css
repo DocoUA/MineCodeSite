@@ -84,9 +84,12 @@ a{
 a:hover{
 	color: gray;
 }
+#media-wr{
+	display: inline;
+	padding-left: 20px;
+}
 #media{
 	width: 65px;
-	padding-left: 20px;
 }
 #logo-footer{
 	display: flex;
@@ -132,7 +135,7 @@ a:hover{
   	margin-top: 1em;
   	margin-bottom: 1em;
   }
-  #media{
+  #media-wr{
   	padding-left: 0;
   	padding-right: 20px;
   }
@@ -166,10 +169,12 @@ a:hover{
 	h5{
 		font-size: 10px;
 	}
-	#media{
-		width: 54px;
+	#media-wr{
   	padding-left: 0;
   	padding-right: 15px;
+  }
+	#media{
+		width: 54px;
   }
 	#logo{
 		width: 55px;
@@ -214,10 +219,12 @@ a:hover{
 	h5{
 		font-size: 9px;
 	}
-	#media{
-		width: 38px;
+	#media-wr{
   	padding-left: 0;
   	padding-right: 10px;
+  }
+	#media{
+		width: 38px;
   }
 	#logo{
 		width: 40px;
