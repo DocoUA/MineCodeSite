@@ -76,7 +76,7 @@
 		<div class="column">
 			<ul>
 				<li><b>Мапа світу</b> — <a href="#" target="_blank">жмяк</a></li>
-				<li><b>Мапа хайперлупу</b> — <a href="/hyperloop" target="_blank">жмяк</a></li>
+				<li><b>Мапа хайперлупу</b> — <a href="https://minecode.pp.ua/hyperloop/" target="_blank">жмяк</a></li>
 			</ul>
 		</div>
 	</div>
@@ -198,10 +198,14 @@
 
 <script type="text/javascript">
 	var counter = 2;
+	var counterBack = false;
 	setInterval(function(){
 		document.getElementById('radio' + counter).checked = true;
-		counter++;
-		if(counter > 4){counter = 1;}
+		if(counterBack == false){counter++}
+		else{counter--};
+
+		if(counter == 4){counterBack = true;}
+		else if(counter == 1){counterBack = false;};
 	}, 5000);
 </script>
 
