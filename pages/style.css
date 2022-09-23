@@ -121,6 +121,77 @@ a:hover{
 	width: 640px;
 	height: 320px;
 }
+summary{
+  display: block;
+  cursor: pointer;
+  outline: 0;
+	transition: all ease 250ms;
+	border-radius: 5px;
+}
+summary::-webkit-details-marker{
+	display: none;
+}
+summary:hover{
+  background-color: #414147;
+}
+details{
+  display: block;
+  position: relative;
+}
+details::before{
+  border-left: 1px solid #414147;
+  content: "";
+  height: 100%;
+  left: 0.8rem;
+  position: absolute;
+  top: 2.4rem;
+  height: calc(100% - 2.4rem);
+}
+details p{
+  margin-left: 1.6rem;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+#punish{
+	background-color: #414147;
+	border-radius: 5px;
+}
+details[open] > summary::before{
+  font-family: "ionicons";
+  transform: rotate(90deg);
+}
+details > summary{
+  padding-left: 1.7rem;
+}
+details > summary::before{
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: "ionicons";
+  color: #fff;
+  content: "\f125";
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+summary{
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: #fff;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
 @media screen and (min-width: 1350px) {
   .column{
     flex: 1
