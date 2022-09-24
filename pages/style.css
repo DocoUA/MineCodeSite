@@ -202,6 +202,15 @@ details[open] summary ~ * {
 .c-red{
 	color: red;
 }
+.c-yellow{
+	color: yellow;
+}
+.c-green{
+	color: green;
+}
+.c-blue{
+	color: aqua;
+}
 @media screen and (min-width: 1350px) {
   .column{
     flex: 1
