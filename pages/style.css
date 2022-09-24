@@ -157,6 +157,9 @@ details p{
 	background-color: #414147;
 	border-radius: 5px;
 }
+details ul{
+	margin: 0 0 0 0.4rem;
+}
 details[open] > summary::before{
   font-family: "ionicons";
   transform: rotate(90deg);
