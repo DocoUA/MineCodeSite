@@ -202,13 +202,19 @@ details[open] summary ~ * {
 .c-red{
 	color: red;
 }
+.c-orange{
+	color: orange;
+}
 .c-yellow{
 	color: yellow;
+}
+.c-purple{
+	color: purple;
 }
 .c-green{
 	color: green;
 }
-.c-blue{
+.c-aqua{
 	color: aqua;
 }
 @media screen and (min-width: 1350px) {
